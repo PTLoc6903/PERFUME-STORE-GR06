@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  list-style: none;
+}
+header {
+  background: #FFB6C1;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header.sticky {
+  opacity: 0.95;
+  padding: 10px 0;
+}
+
+.inner-header {
+  max-width: 1700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+#logo {
+  font-size: 30px;
+  color: #C21010;
+}
+
+#main-menu {
+  display: flex;
+  gap: 20px;
+}
+
+#main-menu a {
+  font-size: 18px;
+  color: black;
+  padding: 10px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#main-menu a:hover {
+  color: #C21010;
+}
+
+.sub-menu {
+  position: absolute;
+  left: auto;
+  display: none;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 300px;
+  margin-left:-50px
+}
+
+#main-menu li:hover .sub-menu {
+  display: block;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.searchText input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background: #D9D9D9;
+}
+
+.searchButton button {
+  padding: 10px 20px;
+  background: #ff7c7c;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}

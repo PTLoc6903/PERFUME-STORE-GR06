@@ -1,0 +1,176 @@
+/* Thiết lập lại font và màu sắc */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    margin-bottom: 20px;
+    margin-top: 160px;
+}
+
+.banner-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Container sản phẩm */
+.container {
+    padding: 20px;
+}
+
+.best-seller {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.best-seller:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.best-seller img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Tên sản phẩm */
+.name-perfume {
+    font-size: 20px;
+    color: #C21010;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Thông tin sản phẩm */
+.perfume-info {
+    font-size: 16px;
+    color: #666;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.discounted-price {
+    color: #C21010;
+    font-weight: bold;
+}
+
+/* Nút bấm */
+.perfume-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.perfume-btn button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.perfume-btn button:first-child {
+    background-color: #5ACE56;
+}
+
+.perfume-btn button:first-child:hover {
+    background-color: #4CAF50;
+}
+
+.perfume-btn button:nth-child(2) {
+    background-color: #C21010;
+}
+
+.perfume-btn button:nth-child(2):hover {
+    background-color: #A00000;
+}
+
+/* Hiệu ứng hover cho hình ảnh sản phẩm */
+.list-menu img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Thiết lập cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .best-seller {
+        padding: 10px;
+    }
+    .name-perfume {
+        font-size: 18px;
+    }
+    .price-section {
+        font-size: 16px;
+    }
+    .perfume-btn button {
+        font-size: 14px;
+    }
+}
+.search-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Tùy chọn màu nền */
+    border-radius: 8px;
+}
+
+.search-container {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.select-box {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
